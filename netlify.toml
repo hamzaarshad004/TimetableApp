@@ -1,0 +1,4 @@
+[build]
+base = "classtime/"
+publish = "classtime/build/"
+command = "npm run build"
