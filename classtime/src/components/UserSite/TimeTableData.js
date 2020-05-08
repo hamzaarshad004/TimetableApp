@@ -34,8 +34,8 @@ export let WednesdayTimeTable = [
   [
     "Design Patterns",
     "Wednesday",
-    "01:00",
-    "03:00",
+    "12:00",
+    "02:00",
     "Shazia Arshad",
     "Microsoft Teams",
   ],
