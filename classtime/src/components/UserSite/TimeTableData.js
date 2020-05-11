@@ -1,24 +1,10 @@
 export let MondayTimeTable = [
   ["Leadership Strategies", "Monday", "11:00", "12:00", "Maryam", "Zoom"],
-  [
-    "Chinese Language",
-    "Monday",
-    "03:00",
-    "04:00",
-    "Zhou Lin",
-    "Microsoft Teams",
-  ],
+  ["Chinese Language", "Monday", "03:00", "04:00", "Zhou Lin", "Zoom"],
 ];
 
 export let TuesdayTimeTable = [
-  [
-    "Chinese Language",
-    "Tuesday",
-    "09:00",
-    "11:00",
-    "Zhou Lin",
-    "Microsoft Teams",
-  ],
+  ["Chinese Language", "Tuesday", "09:00", "11:00", "Zhou Lin", "Zoom"],
   [
     "Programming Languages",
     "Tuesday",
