@@ -1,5 +1,5 @@
 export let MondayTimeTable = [
-  ["Leadership Strategies", "Monday", "11:00", "12:00", "Maryam", "Zoom"],
+  ["Leadership Strategies", "Monday", "11:00", "12:00", "Rizwana", "Zoom"],
   ["Chinese Language", "Monday", "03:00", "04:00", "Zhou Lin", "Zoom"],
 ];
 
@@ -16,7 +16,7 @@ export let TuesdayTimeTable = [
 ];
 
 export let WednesdayTimeTable = [
-  ["Leadership Strategies", "Wednesday", "09:00", "11:00", "Maryam", "Zoom"],
+  ["Leadership Strategies", "Wednesday", "09:00", "11:00", "Rizwana", "Zoom"],
   [
     "Design Patterns",
     "Wednesday",
