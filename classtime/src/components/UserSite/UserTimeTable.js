@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Drawer from "./UserDashboard";
@@ -42,8 +42,23 @@ const useStyles = makeStyles((theme) => ({
 
 const UserTimeTable = (props) => {
   //const { TimeTableList } = props;
-  const [Day, setDay] = React.useState(1);
+  const getCurrentDay = () => {
+    var d = new Date();
+    var n = d.getDay();
+    if (d.getHours() > 15) {
+      n++;
+    }
+    return n;
+  };
+  //const [Day, setDay] = React.useState(1);
+  const [Day, setDay] = React.useState(getCurrentDay());
   const [data, setData] = React.useState(MondayTimeTable);
+
+  useEffect(() => {
+    //setData(ThursdayTimeTable);
+    handleChange(getCurrentDay());
+  }, []);
+
   const columnNames = [
     "Subject Name",
     "Day",
@@ -53,9 +68,13 @@ const UserTimeTable = (props) => {
     "Software Used",
   ];
 
-  function handleChange(event) {
-    let value = event.target.value;
-    setDay(event.target.value);
+  function setToCurrentDay(event) {
+    handleChange(event.target.value);
+  }
+
+  function handleChange(value) {
+    //let value = event.target.value;
+    setDay(value);
     switch (value) {
       case 1:
         setData(MondayTimeTable);
@@ -133,7 +152,7 @@ const UserTimeTable = (props) => {
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 value={Day}
-                onChange={handleChange}
+                onChange={setToCurrentDay}
               >
                 <MenuItem value={1}>Monday</MenuItem>
                 <MenuItem value={2}>Tuesday</MenuItem>
