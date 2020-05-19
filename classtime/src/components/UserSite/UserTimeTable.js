@@ -40,9 +40,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const getCurrentDay = () => {
+  var d = new Date();
+  var n = d.getDay();
+  if (d.getHours > 15) {
+    n++;
+  }
+  return n;
+};
 const UserTimeTable = (props) => {
   //const { TimeTableList } = props;
-  const [Day, setDay] = React.useState(1);
+  const [Day, setDay] = React.useState(getCurrentDay());
   const [data, setData] = React.useState(MondayTimeTable);
   const columnNames = [
     "Subject Name",
