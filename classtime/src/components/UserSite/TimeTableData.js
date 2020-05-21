@@ -50,7 +50,7 @@ export let ThursdayTimeTable = [
 export let FridayTimeTable = [
   [
     "Design Patterns",
-    "Wednesday",
+    "Friday",
     "09:00",
     "10:00",
     "Shazia Arshad",
@@ -58,7 +58,7 @@ export let FridayTimeTable = [
   ],
   [
     "Compiler Construction",
-    "Wednesday",
+    "Friday",
     "02:00",
     "04:00",
     "Talha Waheed",
