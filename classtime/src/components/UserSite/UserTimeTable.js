@@ -74,25 +74,30 @@ const UserTimeTable = (props) => {
 
   function handleChange(value) {
     //let value = event.target.value;
-    setDay(value);
-    switch (value) {
-      case 1:
-        setData(MondayTimeTable);
-        break;
-      case 2:
-        setData(TuesdayTimeTable);
-        break;
-      case 3:
-        setData(WednesdayTimeTable);
-        break;
-      case 4:
-        setData(ThursdayTimeTable);
-        break;
-      case 5:
-        setData(FridayTimeTable);
-        break;
-      default:
-        break;
+    alert(value);
+    if (value === 6 || value === 0) {
+      setDay(1);
+    } else {
+      setDay(value);
+      switch (value) {
+        case 1:
+          setData(MondayTimeTable);
+          break;
+        case 2:
+          setData(TuesdayTimeTable);
+          break;
+        case 3:
+          setData(WednesdayTimeTable);
+          break;
+        case 4:
+          setData(ThursdayTimeTable);
+          break;
+        case 5:
+          setData(FridayTimeTable);
+          break;
+        default:
+          break;
+      }
     }
   }
 
