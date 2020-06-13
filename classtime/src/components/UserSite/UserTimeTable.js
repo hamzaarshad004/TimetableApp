@@ -74,11 +74,9 @@ const UserTimeTable = (props) => {
 
   function handleChange(value) {
     //let value = event.target.value;
-    if (value === 6 || value === 0) {
-      alert("Comes here");
+    if (value === 6 || value === 0 || value === 7) {
       setDay(1);
     } else {
-      alert("Should Not");
       setDay(value);
       switch (value) {
         case 1:
